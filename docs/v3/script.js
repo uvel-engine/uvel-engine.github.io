@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   NIMBUS DOCS V3 - CORE LOGIC
+   UVEL DOCS V3 - CORE LOGIC
    Handles: Theme, Sidebar Generation, Versioning, Copy Code
    ═══════════════════════════════════════════════════════════ */
 
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ----------------------------------------------------
     const githubLink = document.querySelector('.github-btn');
     if (githubLink) {
-        githubLink.href = 'https://github.com/nimbus-engine/nimbus';
+        githubLink.href = 'https://github.com/uvel-engine/uvel';
     }
     
     // 1. SIDEBAR GENERATION
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ----------------------------------------------------
     const themeToggle = document.getElementById('themeToggle');
     const htmlEl = document.documentElement;
-    const storedTheme = localStorage.getItem('nimbus-theme');
+    const storedTheme = localStorage.getItem('uvel-theme');
     
     const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
             
             htmlEl.setAttribute('data-theme', newTheme);
-            localStorage.setItem('nimbus-theme', newTheme);
+            localStorage.setItem('uvel-theme', newTheme);
         });
     }
 

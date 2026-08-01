@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineering - Nimbus Framework v3.0</title>
+    <title>Engineering - Uvel Framework v3.0</title>
     
     <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -49,7 +49,7 @@
             <div class="sidebar-header">
                 <a href="#" class="logo">
                     <span class="material-symbols-rounded logo-icon">thunderstorm</span>
-                    <span>Nimbus</span>
+                    <span>Uvel</span>
                 </a>
                 <button class="icon-btn close-sidebar-btn" id="closeSidebar">
                     <span class="material-symbols-rounded">menu_open</span>
@@ -81,7 +81,7 @@
                     <span class="page-title">Engineering</span>
                 </div>
                 <div class="top-bar-right">
-                    <a href="https://github.com/modderboyy/nimbus-engine" target="_blank" class="icon-btn github-btn">
+                    <a href="https://github.com/modderboyy/uvel-engine" target="_blank" class="icon-btn github-btn">
                         <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                     </a>
                     <button class="icon-btn theme-toggle" id="themeToggle">
@@ -96,7 +96,7 @@
                     
                     <div class="hero-block">
                         <h1>Engineering</h1>
-                        <p class="lead">Under the hood of Nimbus. Explore the architecture, design decisions, and internal mechanisms.</p>
+                        <p class="lead">Under the hood of Uvel. Explore the architecture, design decisions, and internal mechanisms.</p>
                     </div>
 
                     <div class="table-of-contents">
@@ -114,7 +114,7 @@
 
                     <!-- ARCHITECTURE -->
                     <h2 id="architecture">1. Architecture Overview</h2>
-                    <p>Nimbus is built on top of the .NET Framework 4.0 and WPF (Windows Presentation Foundation). It acts as a lightweight wrapper that translates XML declarative syntax into native WPF objects at runtime.</p>
+                    <p>Uvel is built on top of the .NET Framework 4.0 and WPF (Windows Presentation Foundation). It acts as a lightweight wrapper that translates XML declarative syntax into native WPF objects at runtime.</p>
 
                     <div class="arch-diagram">
                         <div class="arch-box" style="border-color:#0078D4">App.xml (Input)</div>
@@ -137,7 +137,7 @@
 
                     <!-- PIPELINE -->
                     <h2 id="pipeline">2. Execution Pipeline</h2>
-                    <p>When you run <code>nimbus run App.xml</code>, the following sequence occurs:</p>
+                    <p>When you run <code>uvel run App.xml</code>, the following sequence occurs:</p>
 
                     <ol class="step-list">
                         <li><strong>Parsing:</strong> <code>XmlParser</code> reads the XML file and separates UI, Logic, and Styles.</li>
@@ -175,7 +175,7 @@
 
                     <!-- UI GENERATION -->
                     <h2 id="ui-generation">4. UI Generation (WpfUI.cs)</h2>
-                    <p>Nimbus does NOT use `XamlReader.Parse`. Instead, it manually constructs the visual tree for maximum control and custom component support.</p>
+                    <p>Uvel does NOT use `XamlReader.Parse`. Instead, it manually constructs the visual tree for maximum control and custom component support.</p>
 
                     <h3>Custom Component Logic</h3>
                     <p>When the parser encounters a tag like <code>&lt;GlassCard&gt;</code>, it doesn't just create a generic control. It calls a specific generator method that assembles a complex visual tree (Border + BlurEffect + ContentPresenter).</p>

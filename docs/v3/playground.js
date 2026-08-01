@@ -1,9 +1,9 @@
 /* ═══════════════════════════════════════════════════════════
-   NIMBUS WEBRUNNER ENGINE v1.0 (JS Port)
+   UVEL WEBRUNNER ENGINE v1.0 (JS Port)
    Parses XML, Renders UI, Executes Logic
    ═══════════════════════════════════════════════════════════ */
 
-class NimbusEngine {
+class UvelEngine {
     constructor() {
         this.state = {};
         this.handlers = {};
@@ -346,7 +346,7 @@ class NimbusEngine {
 // EDITOR & UI LOGIC
 // ═══════════════════════════════════════════════════════════
 
-const engine = new NimbusEngine();
+const engine = new UvelEngine();
 
 // Syntax Highlighting (Simple Regex)
 function highlight(code) {
@@ -398,7 +398,7 @@ const EXAMPLES = {
     hello: `<App Name="Hello" Theme="Dark">
     <UI>
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-            <TextBlock Text="Hello, Nimbus!" FontSize="24" Foreground="White"/>
+            <TextBlock Text="Hello, Uvel!" FontSize="24" Foreground="White"/>
             <Button Content="Click Me" Background="#0078D4" Margin="20" onClick="Greet"/>
         </StackPanel>
     </UI>

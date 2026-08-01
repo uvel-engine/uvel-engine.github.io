@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLI Reference - Nimbus Framework v3.0</title>
+    <title>CLI Reference - Uvel Framework v3.0</title>
     
     <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
             <div class="sidebar-header">
                 <a href="#" class="logo">
                     <span class="material-symbols-rounded logo-icon">thunderstorm</span>
-                    <span>Nimbus</span>
+                    <span>Uvel</span>
                 </a>
                 <button class="icon-btn close-sidebar-btn" id="closeSidebar">
                     <span class="material-symbols-rounded">menu_open</span>
@@ -52,7 +52,7 @@
                     <span class="page-title">CLI Reference</span>
                 </div>
                 <div class="top-bar-right">
-                    <a href="https://github.com/modderboyy/nimbus-engine" target="_blank" class="icon-btn github-btn">
+                    <a href="https://github.com/modderboyy/uvel-engine" target="_blank" class="icon-btn github-btn">
                         <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                     </a>
                     <button class="icon-btn theme-toggle" id="themeToggle">
@@ -67,17 +67,17 @@
                     
                     <div class="hero-block">
                         <h1>CLI Reference</h1>
-                        <p class="lead">Complete documentation for the Nimbus command-line interface. Run, debug, and build your applications.</p>
+                        <p class="lead">Complete documentation for the Uvel command-line interface. Run, debug, and build your applications.</p>
                     </div>
 
                     <div class="table-of-contents">
                         <h3>Jump to</h3>
                         <ul>
                             <li><a href="#overview">Overview</a></li>
-                            <li><a href="#run">nimbus run</a></li>
-                            <li><a href="#dev">nimbus dev</a></li>
-                            <li><a href="#build">nimbus build</a></li>
-                            <li><a href="#new">nimbus new</a></li>
+                            <li><a href="#run">uvel run</a></li>
+                            <li><a href="#dev">uvel dev</a></li>
+                            <li><a href="#build">uvel build</a></li>
+                            <li><a href="#new">uvel new</a></li>
                         </ul>
                     </div>
 
@@ -85,13 +85,13 @@
 
                     <!-- OVERVIEW -->
                     <h2 id="overview">Overview</h2>
-                    <p>The <code>nimbus</code> executable is your entry point for all operations. It must be in your system PATH.</p>
+                    <p>The <code>uvel</code> executable is your entry point for all operations. It must be in your system PATH.</p>
 
                     <div class="code-block">
                         <div class="code-header">
                             <span class="code-lang">Usage</span>
                         </div>
-                        <pre><code>nimbus &lt;command&gt; [options]</code></pre>
+                        <pre><code>uvel &lt;command&gt; [options]</code></pre>
                     </div>
 
                     <table class="api-table">
@@ -111,19 +111,19 @@
                     <hr class="divider">
 
                     <!-- RUN -->
-                    <h2 id="run">nimbus run</h2>
+                    <h2 id="run">uvel run</h2>
                     <p>Starts the application in production mode. No debug logs or hot reload.</p>
 
                     <div class="code-block">
-                        <pre><code>nimbus run App.xml</code></pre>
+                        <pre><code>uvel run App.xml</code></pre>
                     </div>
 
-                    <p>If you don't specify a file, it looks for <code>nimbus.json</code> or <code>App.xml</code> in the current folder.</p>
+                    <p>If you don't specify a file, it looks for <code>uvel.json</code> or <code>App.xml</code> in the current folder.</p>
 
                     <hr class="divider">
 
                     <!-- DEV -->
-                    <h2 id="dev">nimbus dev</h2>
+                    <h2 id="dev">uvel dev</h2>
                     <p>Starts the application in development mode. This enables:</p>
                     <ul>
                         <li><strong>Hot Reload:</strong> UI updates on file save.</li>
@@ -132,7 +132,7 @@
                     </ul>
 
                     <div class="code-block">
-                        <pre><code>nimbus dev App.xml [options]</code></pre>
+                        <pre><code>uvel dev App.xml [options]</code></pre>
                     </div>
 
                     <h3>Options</h3>
@@ -148,17 +148,17 @@
 
                     <h3>Examples</h3>
                     <div class="code-block">
-                        <pre><code>nimbus dev App.xml --port 8080</code></pre>
+                        <pre><code>uvel dev App.xml --port 8080</code></pre>
                     </div>
 
                     <hr class="divider">
 
                     <!-- BUILD -->
-                    <h2 id="build">nimbus build</h2>
+                    <h2 id="build">uvel build</h2>
                     <p>Compiles your project into a single, dependency-free executable.</p>
 
                     <div class="code-block">
-                        <pre><code>nimbus build App.xml [options]</code></pre>
+                        <pre><code>uvel build App.xml [options]</code></pre>
                     </div>
 
                     <h3>Options</h3>
@@ -177,17 +177,17 @@
 
                     <h3>Examples</h3>
                     <div class="code-block">
-                        <pre><code>nimbus build App.xml -o ./dist -n Calculator --icon icon.ico</code></pre>
+                        <pre><code>uvel build App.xml -o ./dist -n Calculator --icon icon.ico</code></pre>
                     </div>
 
                     <hr class="divider">
 
                     <!-- NEW -->
-                    <h2 id="new">nimbus new</h2>
+                    <h2 id="new">uvel new</h2>
                     <p>Creates a new project folder with starter files.</p>
 
                     <div class="code-block">
-                        <pre><code>nimbus new &lt;ProjectName&gt; [template]</code></pre>
+                        <pre><code>uvel new &lt;ProjectName&gt; [template]</code></pre>
                     </div>
 
                     <h3>Templates</h3>
@@ -205,10 +205,10 @@
                     <h3>Examples</h3>
                     <div class="code-block">
                         <pre><code># Create basic app
-nimbus new MyAwesomeApp
+uvel new MyAwesomeApp
 
 # Create calculator
-nimbus new MyCalc calculator</code></pre>
+uvel new MyCalc calculator</code></pre>
                     </div>
 
                     <div class="navigation-footer">

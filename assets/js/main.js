@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   NIMBUS FRAMEWORK - MAIN JS
+   UVEL FRAMEWORK - MAIN JS
    Interactions, Animations, and Logic
    ═══════════════════════════════════════════════════════════ */
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Building & Deploy - Nimbus Framework v3.0</title>
+    <title>Building & Deploy - Uvel Framework v3.0</title>
     
     <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
             <div class="sidebar-header">
                 <a href="#" class="logo">
                     <span class="material-symbols-rounded logo-icon">thunderstorm</span>
-                    <span>Nimbus</span>
+                    <span>Uvel</span>
                 </a>
                 <button class="icon-btn close-sidebar-btn" id="closeSidebar">
                     <span class="material-symbols-rounded">menu_open</span>
@@ -52,7 +52,7 @@
                     <span class="page-title">Building EXE</span>
                 </div>
                 <div class="top-bar-right">
-                    <a href="https://github.com/modderboyy/nimbus-engine" target="_blank" class="icon-btn github-btn">
+                    <a href="https://github.com/modderboyy/uvel-engine" target="_blank" class="icon-btn github-btn">
                         <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                     </a>
                     <button class="icon-btn theme-toggle" id="themeToggle">
@@ -75,7 +75,7 @@
                         <ul>
                             <li><a href="#how-it-works">How it Works</a></li>
                             <li><a href="#basic-build">Basic Build</a></li>
-                            <li><a href="#configuration">Configuration (nimbus.json)</a></li>
+                            <li><a href="#configuration">Configuration (uvel.json)</a></li>
                             <li><a href="#advanced">Advanced Options</a></li>
                         </ul>
                     </div>
@@ -84,7 +84,7 @@
 
                     <!-- HOW IT WORKS -->
                     <h2 id="how-it-works">1. How it Works</h2>
-                    <p>Nimbus includes a built-in compiler that translates your XML/Logic into C# source code, embeds the engine core, and compiles everything using the native .NET compiler (`csc.exe`).</p>
+                    <p>Uvel includes a built-in compiler that translates your XML/Logic into C# source code, embeds the engine core, and compiles everything using the native .NET compiler (`csc.exe`).</p>
 
                     <div class="cards-grid">
                         <div class="card">
@@ -117,7 +117,7 @@
                                 <span class="material-symbols-rounded">content_copy</span>
                             </button>
                         </div>
-                        <pre><code>nimbus build App.xml</code></pre>
+                        <pre><code>uvel build App.xml</code></pre>
                     </div>
 
                     <p>This will create a `build/` folder containing:</p>
@@ -129,19 +129,19 @@
                     <div class="callout callout-info">
                         <span class="material-symbols-rounded callout-icon">verified</span>
                         <div class="callout-body">
-                            <strong>Zero Dependencies:</strong> The resulting .exe does NOT need Nimbus installed to run. It only requires the .NET Framework (which is pre-installed on Windows).
+                            <strong>Zero Dependencies:</strong> The resulting .exe does NOT need Uvel installed to run. It only requires the .NET Framework (which is pre-installed on Windows).
                         </div>
                     </div>
 
                     <hr class="divider">
 
                     <!-- CONFIGURATION -->
-                    <h2 id="configuration">3. Configuration (nimbus.json)</h2>
-                    <p>Instead of passing arguments every time, create a `nimbus.json` file in your project root.</p>
+                    <h2 id="configuration">3. Configuration (uvel.json)</h2>
+                    <p>Instead of passing arguments every time, create a `uvel.json` file in your project root.</p>
 
                     <div class="code-block">
                         <div class="code-header">
-                            <span class="code-lang">nimbus.json</span>
+                            <span class="code-lang">uvel.json</span>
                             <button class="copy-btn" onclick="copyCode(this)">
                                 <span class="material-symbols-rounded">content_copy</span>
                             </button>
@@ -161,14 +161,14 @@
 
                     <p>Now you can simply run:</p>
                     <div class="code-block">
-                        <pre><code>nimbus build</code></pre>
+                        <pre><code>uvel build</code></pre>
                     </div>
 
                     <hr class="divider">
 
                     <!-- ADVANCED -->
                     <h2 id="advanced">4. Advanced Options</h2>
-                    <p>Command line arguments override `nimbus.json` settings.</p>
+                    <p>Command line arguments override `uvel.json` settings.</p>
 
                     <table class="api-table">
                         <thead>
@@ -187,12 +187,12 @@
 
                     <p><strong>Build with custom icon:</strong></p>
                     <div class="code-block">
-                        <pre><code>nimbus build App.xml --icon assets/app.ico</code></pre>
+                        <pre><code>uvel build App.xml --icon assets/app.ico</code></pre>
                     </div>
 
                     <p><strong>Debug build (with console):</strong></p>
                     <div class="code-block">
-                        <pre><code>nimbus build App.xml --console</code></pre>
+                        <pre><code>uvel build App.xml --console</code></pre>
                     </div>
 
                     <div class="navigation-footer">
